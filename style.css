@@ -5,7 +5,6 @@
 /*Colors*/
 --Pale-blue: hsl(225, 100%, 94%);
 --Bright-blue: hsl(245, 75%, 52%);
-
 --Very-pale-blue: hsl(225, 100%, 98%);
 --Desaturated-blue: hsl(224, 23%, 55%);
 --Dark-blue: hsl(223, 47%, 23%);
@@ -14,4 +13,126 @@
 body {
     font-family: "Oufit", sans-serif;
     background-color: var(--Pale-blue);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+}
+
+
+h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--Dark-blue);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--Dark-blue);
+    padding: 10px;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    /* padding: 1.5rem; */
+    min-height: 100vh;
+}
+
+.container {
+  background-color: var(--Very-pale-blue);
+  border-radius: 10px;
+  max-width: 400px;
+  /* padding: 1rem; */
+  box-shadow: 0px 5px 10px hsla(245, 75%, 52%, 0.44);
+}
+
+.hero {
+    text-align: center;
+    
+}
+
+.hero-image img {
+    max-width:100%;
+    max-height:100%;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+.hero p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--Desaturated-blue);
+    text-align: center;
+}
+
+.plan {
+    display: flex;
+    border-radius: 5px;
+    background-color: hsl(224, 100%, 96%);
+    max-width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
+}
+
+.payment {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 700;
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    box-shadow: 1px 5px 10px var(--Pale-blue);
+    text-align: center;
+}
+
+.cancel {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 1rem;
+    color: var(--Desaturated-blue);
+    text-align: center;
+}
+
+.payment:hover {
+    background-color: hsla(245, 75%, 52%, 0.821);
+    color: var(--Very-pale-blue);
+    cursor: pointer;
+}
+
+.cancel:hover {
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
+
+.price {
+    position: absolute;
+    margin-top: 40px;
+    /* padding: 1rem; */
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    text-align: center;
+}
+
+.change {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: var(--Bright-blue);
+    margin: 0;
+}
+
+.change:hover {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.821);
+    cursor: pointer;
 }
